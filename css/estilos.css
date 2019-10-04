@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'open sans', sans-serif, Arial, Helvetica;
+}
+
+a{text-decoration: none}
+
+.contenedor{
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta{
+    background-color: white;
+    margin: 25px 0;             /*30 pixeles de margen superior e inferior, cero espacio de margen a los lados*/
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- EDICIÓN DE LA SECCIÓN DEL BANNER -------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.slider_banner{
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+}
+
+.slider_banner,
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.slider_banner .banner img{
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;                     /*quita el margen de la parte superior de las imagenes, es decir las imagenes en su parte superior no tendrán                                   ningun espaciado hacia abajo*/
+    left: 100%;                 /*pone un margen del 100% a partir del lado izquierdo, es decir las imagenes se salen de su contenedor y se                                     posicionan a la derecha*/   
+}
+
+.slider_banner .flecha_banner{
+    font-size: 45px;
+    line-height: 45px;
+    color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+}
+
+.slider_banner .flecha_banner:hover{
+    color: rgba(0,0,0,0.7);
+}
+
+.slider_banner .anterior{
+    left: 10px;
+}
+
+.slider_banner .siguiente{
+    right: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------- EDICIÓN DE LA SECCIÓN DE LA INFO ----------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.slider_info{
+    overflow: hidden;
+    z-index: 1000;
+    position: relative;
+    text-align: center;
+}
+
+.slider_info .informacion{
+    width: 100%;
+}
+
+.slider_info .informacion article{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_info .informacion article .slide{
+    vertical-align: top;
+    width: 100%;
+    padding: 20px 60px;
+    position: absolute;
+    top: 0;
+    background: white;
+    left: 100%;
+}
+
+.slider_info .flecha_info{
+    font-size: 45px;
+    line-height: 45px;
+    color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+}
+
+.slider_info .flecha_info:hover{
+    color: rgba(0,0,0,0.7);
+}
+
+.slider_info .anterior{
+    left: 10px;
+}
+
+.slider_info .siguiente{
+    right: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------- ESTILOS PARA LOS SLIDES DE INFO ----------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.slider_info .informacion .nombre{
+    font-weight: 600px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 18px;
+    color: #B41648;    
+}
+
+.slider_info .informacion .trabajo{
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 18px;
+    color: #2C2829;    
+}
+
+.slider_info .informacion .pais{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 18px;
+    color: #176F3E;    
+}
+
+.slider_info .informacion .pais img{
+    position: relative;
+    top: 5px;   
+    margin-right: 10px;
+}
+
+.slider_info .informacion .subtitulo{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #273642;    
+}
+
+.slider_info .informacion .texto{
+    font-size: 15px;
+    line-height: 1.2;
+    color: #118EE7;   
+    text-align: center;
+}
+
+.slider_info .botones span{
+    background-color: #CED3D7;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;    
+}
+
+.slider_info .botones .active{
+    background-color: #B41648;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------ ESTILOS PARA REDES SOCIALES -----------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.redes_sociales{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes_sociales a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.redes_sociales .facebook{background: #3b5998}
+.redes_sociales .youtube{background: #c4302b}
